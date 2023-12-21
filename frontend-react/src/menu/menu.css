@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .menu.maximized {
+    @apply fixed top-0 left-0 h-screen z-[1] w-[18rem] m-0
+            flex flex-col bg-gray-900
+            text-white text-sm shadow-lg
+            transition-all duration-200 ease-linear;
+  }
+
+  .menu-item {
+    @apply relative flex items-center justify-center
+            h-10 w-[17.15rem] mt-1 mb-1 mx-auto
+            text-white hover:bg-gray-700
+            rounded-sm transition-all duration-100
+            ease-linear cursor-pointer;
+  }
+
+  .menu-item.active {
+    @apply bg-gray-700;
+  }
+
+  .menu-break {
+    @apply relative flex items-center justify-center
+            w-[17.15rem] mt-1 mb-1 mx-auto border-gray-700;
+  }
+}
