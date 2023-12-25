@@ -4,15 +4,20 @@
 
 @layer components {
   .menu.maximized {
-    @apply fixed top-0 left-0 h-screen z-[1] w-[18rem] m-0
+    @apply fixed top-0 left-0 h-screen z-[1] w-72 m-0
             flex flex-col bg-gray-900
             text-white text-sm shadow-lg
             transition-all duration-200 ease-linear;
   }
 
+  .apply-width {
+    @apply w-[17.5rem];
+  }
+
   .menu-item {
-    @apply relative flex items-center justify-center
-            h-10 w-[17.15rem] mt-1 mb-1 mx-auto
+    @apply relative grid grid-cols-12 gap-4
+            items-center justify-center
+            h-10 apply-width mt-1 mb-1 mx-auto
             text-white hover:bg-gray-700
             rounded-sm transition-all duration-100
             ease-linear cursor-pointer;
@@ -22,8 +27,24 @@
     @apply bg-gray-700;
   }
 
+  .menu-item-highlight {
+    @apply flex col-span-1;
+  }
+
+  .menu-item.active > .menu-item-highlight {
+    @apply h-[1.15rem] w-[0.22rem] bg-sky-400 rounded-3xl;
+  }
+
+  .menu-item-icon {
+    @apply flex col-span-2 items-start justify-center;
+  }
+
+  .menu-item-label {
+    @apply flex col-span-9 items-center;
+  }
+
   .menu-break {
     @apply relative flex items-center justify-center
-            w-[17.15rem] mt-1 mb-1 mx-auto border-gray-700;
+            apply-width mt-1 mb-1 mx-auto border-gray-700;
   }
 }
