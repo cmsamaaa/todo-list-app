@@ -4,17 +4,16 @@
 
 @layer components {
   .default-width {
-    --default-width: 18rem; /* w-72 */
-    width: var(--default-width);
+    @apply w-menu;
   }
 
   .menu-item-width {
-    width: calc(var(--default-width) - 0.5rem);
+    @apply w-[calc(theme('width.menu')-0.5rem)];
   }
 
   .menu.maximized {
     @apply fixed top-0 left-0 h-screen z-[1] default-width m-0
-            flex flex-col bg-gray-900
+            flex flex-col bg-gray-800
             text-white text-sm shadow-lg
             transition-all duration-200 ease-linear;
   }
@@ -23,13 +22,13 @@
     @apply relative grid grid-cols-12 gap-4
             items-center justify-center
             h-10 menu-item-width mt-1 mb-1 mx-auto
-            text-white hover:bg-gray-700
+            text-white hover:bg-gray-600
             rounded-sm transition-all duration-100
             ease-linear cursor-pointer;
   }
 
   .menu-item.active {
-    @apply bg-gray-700;
+    @apply bg-gray-600;
   }
 
   .menu-item-highlight {
@@ -49,11 +48,11 @@
   }
 
   .menu-item-count {
-    @apply flex col-span-2 size-4 items-center justify-center text-[11px] bg-gray-800 rounded-full;
+    @apply flex col-span-2 size-4 items-center justify-center text-[11px] bg-gray-600 rounded-full;
   }
 
   .menu-break {
     @apply relative flex items-center justify-center
-            menu-item-width mt-1 mb-1 mx-auto border-gray-700;
+            menu-item-width mt-1 mb-1 mx-auto border-gray-600;
   }
 }
