@@ -1,0 +1,29 @@
+@tailwind components;
+
+@layer components {
+  .list-container {
+    @apply flex ml-[theme('width.menu')] w-full h-screen justify-center items-center bg-day bg-cover bg-center;
+  }
+
+  .list-container > .overlay {
+    @apply absolute top-0 left-0 right-0 bottom-0 bg-black opacity-25;
+  }
+
+  .list-empty-card {
+    @apply isolate grid justify-center items-center w-64 h-64
+            text-white rounded-xl ring-1 ring-black/5
+            bg-gray-700/70 backdrop-blur-md;
+  }
+
+  .list-empty-card > .icon {
+    @apply m-2 text-xs text-center;
+  }
+
+  .list-empty-card > .title {
+    @apply m-2 text-xl font-semibold text-center;
+  }
+
+  .list-empty-card > .subtitle {
+    @apply m-2 text-xs text-center;
+  }
+}

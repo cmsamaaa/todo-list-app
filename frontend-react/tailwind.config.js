@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'day': "url('/img/bg/pexels-nick-kwan-2614818.jpg')"
+      },
       colors: {
         primary: '#202225',
         secondary: '#5865f2',
