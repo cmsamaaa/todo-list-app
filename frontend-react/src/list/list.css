@@ -1,12 +1,16 @@
 @tailwind components;
 
 @layer components {
+  .rounded-corner {
+    @apply rounded-tl-xl;
+  }
+
   .list-container {
-    @apply flex ml-[theme('width.menu')] w-full h-screen justify-center items-center bg-day bg-cover bg-center;
+    @apply flex ml-[theme('width.menu')] w-full h-screen rounded-corner justify-center items-center bg-day bg-cover bg-center;
   }
 
   .list-container > .overlay {
-    @apply absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50;
+    @apply absolute ml-[theme('width.menu')] top-0 left-0 right-0 bottom-0 rounded-corner bg-black opacity-50;
   }
 
   .list-empty-card {
