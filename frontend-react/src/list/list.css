@@ -16,14 +16,18 @@
   }
 
   .list-empty-card > .icon {
-    @apply m-2 text-xs text-center;
+    @apply text-xs text-center;
+  }
+
+  .list-empty-card > .icon > .calendar-icon {
+    @apply mx-auto w-24 h-24;
   }
 
   .list-empty-card > .title {
-    @apply m-2 text-xl font-semibold text-center;
+    @apply m-2 mt-0 text-xl font-semibold text-center;
   }
 
   .list-empty-card > .subtitle {
-    @apply m-2 text-xs text-center;
+    @apply m-2 mt-0 text-xs text-center;
   }
 }
