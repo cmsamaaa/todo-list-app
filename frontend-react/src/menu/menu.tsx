@@ -8,6 +8,7 @@ import { GoHome } from 'react-icons/go';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import MenuItem from './menu-item';
 import MenuBreak from './menu-break';
+import NewList from './new-list';
 
 const Menu = () => {
   return (
@@ -71,6 +72,7 @@ const Menu = () => {
             active={false}
             first={false}
           />
+          <NewList />
         </div>
       </div>
     </>

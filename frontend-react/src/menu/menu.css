@@ -27,6 +27,10 @@
             ease-linear cursor-pointer;
   }
 
+  .menu-item.new-list {
+    @apply absolute bottom-0 m-1;
+  }
+
   .menu-item.active {
     @apply bg-gray-600;
   }
