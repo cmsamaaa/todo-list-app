@@ -28,7 +28,7 @@
   }
 
   .menu-item.new-list {
-    @apply absolute bottom-0 m-1;
+    @apply absolute bottom-0 m-1 mb-2;
   }
 
   .menu-item.active {
