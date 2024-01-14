@@ -18,58 +18,58 @@ const Menu = () => {
           <MenuItem
             iconType={IoSunnyOutline}
             iconSize={20}
+            id={0}
             label={'My Day'}
             count={0}
-            active={true}
             first={true}
           />
           <MenuItem
             iconType={FaRegStar}
             iconSize={20}
+            id={1}
             label={'Important'}
             count={0}
-            active={false}
             first={false}
           />
           <MenuItem
             iconType={TbColumns3}
             iconSize={20}
+            id={2}
             label={'Planned'}
             count={0}
-            active={false}
             first={false}
           />
           <MenuItem
             iconType={FaRegUser}
             iconSize={20}
+            id={3}
             label={'Assigned to me'}
             count={0}
-            active={false}
             first={false}
           />
           <MenuItem
             iconType={GoHome}
             iconSize={20}
+            id={4}
             label={'Tasks'}
             count={0}
-            active={false}
             first={false}
           />
           <MenuBreak />
           <MenuItem
             iconType={RxHamburgerMenu}
             iconSize={20}
+            id={5}
             label={'Getting started'}
             count={7}
-            active={false}
             first={false}
           />
           <MenuItem
             iconType={RxHamburgerMenu}
             iconSize={20}
+            id={6}
             label={'Groceries'}
             count={5}
-            active={false}
             first={false}
           />
           <NewList />
