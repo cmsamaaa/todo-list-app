@@ -1,0 +1,13 @@
+{
+    "default": {
+        "My Day": "IoSunnyOutline",
+        "Important": "FaRegStar",
+        "Planned": "TbColumns3",
+        "Assigned to me": "FaRegUser",
+        "Tasks": "GoHome"
+    },
+    "user": {
+        "Getting started": "RxHamburgerMenu",
+        "Groceries": "RxHamburgerMenu"
+    }
+}
